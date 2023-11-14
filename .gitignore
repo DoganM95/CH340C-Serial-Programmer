@@ -1,0 +1,17 @@
+**/.pio
+**/.vscode
+
+**/Credentials/*
+**/Configuration/*
+
+!***_example.h
+
+**/*.bkp
+**/*.log
+
+desktop.ini
+folderico-github.ico
+
+**.b#*
+**.s#*
+**/CAMOutputs
