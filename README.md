@@ -7,10 +7,10 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 <table>
   <tr>
     <td>
-      <img src="https://github.com/DoganM95/CH340C-Module/assets/38842553/6ef7a9f7-dea1-4f84-8edb-5d80ce9aaf78" alt="PCB Top View" width="100%" />
+      <img src="https://github.com/DoganM95/CH340C-Pcb/assets/38842553/90784a38-3567-4cee-b42a-d1d5a5c72e44" alt="PCB Top View" width="100%" />
     </td>
     <td>
-      <img src="https://github.com/DoganM95/CH340C-Module/assets/38842553/4df9d6df-a594-44ad-b597-a1be0cbc1aa9" alt="PCB Bottom View" width="100%" />
+      <img src="https://github.com/DoganM95/CH340C-Pcb/assets/38842553/83c0b718-0b2c-4d56-bbd6-e11d8ced7d17" alt="PCB Bottom View" width="100%" />
     </td>
   </tr>
 </table>
