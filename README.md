@@ -33,7 +33,8 @@ The following table contains all the parts required for the CH340C-Module, along
 | R1        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | R2        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | C1        | 0603-100nF              | Capacitor, 0603 sized, 100 nano Farad |
-| C2        | 0603-1uF                | Capacitor, 0603 sized, 1 micro Farad  |
+| C2        | 0603-100nF              | Capacitor, 0603 sized, 100 nano Farad |
+| JP1       | Jumper                  | short: mid (VCC) with left (3V3) or right (5V)|
 | U4        | AO3400                  | N-Channel Mosfet                      |
 | U3        | AO3400                  | N-Channel Mosfet                      |
 | U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator          |
