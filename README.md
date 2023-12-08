@@ -64,3 +64,6 @@ Overall i am very satisfied with the quality of the pcb's, especially with
 
 One thing i missed was clearer texts (white) on the pcb's, but printing those in good quality, especially sized at 0.6mm, can be challenging.  
 I am very pleased to get these sponsored by [PCBWay](https://pcbway.com/g/8bcMJY) and can recommend their service, especially for the high quality you get and the huge amount of configurable settings.  
+
+## Video preview
+https://github.com/DoganM95/CH340C-Pcb/assets/38842553/810827a4-b2fa-454a-bed7-59ae43e08667
