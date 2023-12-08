@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2407,7 +2407,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="ESP32_IO0" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:5829429/1"/>
 <part name="ESP32_TX" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:5829429/1"/>
 <part name="ESP32_RX" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:5829429/1"/>
-<part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100nF"/>
+<part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="4.7uF"/>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_NO" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39284/1" value="JUMPER-SMT_3_NO_NO-SILK"/>
 </parts>
 <sheets>
@@ -2440,12 +2440,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="164.719" y="49.784" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U3" gate="G$1" x="152.4" y="-12.7" smashed="yes">
-<attribute name="NAME" x="142.24" y="-10.287" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="-12.7" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="-12.827" size="1.778" layer="95"/>
+<attribute name="VALUE" x="157.48" y="-15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="U4" gate="G$1" x="165.1" y="2.54" smashed="yes">
-<attribute name="NAME" x="154.94" y="4.953" size="1.778" layer="95"/>
-<attribute name="VALUE" x="154.94" y="2.54" size="1.778" layer="96"/>
+<attribute name="NAME" x="170.18" y="2.413" size="1.778" layer="95"/>
+<attribute name="VALUE" x="170.18" y="0" size="1.778" layer="96"/>
 </instance>
 <instance part="ESP32_EN" gate="G$1" x="190.5" y="10.16" smashed="yes">
 <attribute name="NAME" x="189.23" y="11.43" size="1.778" layer="95"/>
@@ -2519,14 +2519,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U2" gate="G$1" pin="!RTS"/>
 <wire x1="139.7" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <label x="147.32" y="33.02" size="1.778" layer="95" align="bottom-right"/>
-<wire x1="152.4" y1="33.02" x2="152.4" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="33.02" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="G"/>
-<wire x1="147.32" y1="-15.24" x2="147.32" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="2.54" x2="152.4" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-15.24" x2="147.32" y2="0" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="0" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="S"/>
 <wire x1="167.64" y1="-5.08" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="-5.08" x2="152.4" y2="2.54" width="0.1524" layer="91"/>
-<junction x="152.4" y="2.54"/>
+<wire x1="152.4" y1="-5.08" x2="152.4" y2="0" width="0.1524" layer="91"/>
+<junction x="152.4" y="0"/>
 </segment>
 </net>
 <net name="R232" class="0">
@@ -2672,14 +2672,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U3" gate="G$1" pin="D"/>
 <wire x1="154.94" y1="-7.62" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
-<label x="154.94" y="-7.62" size="1.778" layer="95" align="bottom-right"/>
+<label x="180.34" y="-7.62" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="ESP32_IO0" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="EN" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="D"/>
-<label x="166.878" y="8.382" size="1.778" layer="95" align="bottom-right"/>
+<label x="182.118" y="8.382" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="167.64" y="7.62"/>
 <wire x1="167.64" y1="10.16" x2="167.64" y2="7.62" width="0.1524" layer="91"/>
