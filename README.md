@@ -47,3 +47,4 @@ https://www.wch.cn/download/CH341SER_ZIP.html
 - The 3V pin of the CH340C needs to be connected (exclusively) to GND with a 100nF capacitor in between, else it will not work and not show up in windows device manager
 - Connecting it with wrong polarity (5V and GND) gets the chip hot quickly, but doesn't break it when cutting the power off soon (like 20 seconds)
 - The absolute minimum circuit (only) to check if a CH340C ic is functional and gets recognized in windows device manager consists of a usb port with all 4 pins (5v, d-, d+, gnd) connected to the CH340C as well as the said 100nF capacitor from its 3v pin to gnd
+- The capacitor (C2) between EN and GND needs to be high enough, else the auto reset will not work. `100nF` was too little, so the IDE was stuck at `Hard resetting via RTS pin...` and the module had to be plugged out and in again manually. Increasing the capacitance to `4.7nF` solved this and the auto reset works fine with that.
