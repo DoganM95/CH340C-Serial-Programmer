@@ -56,7 +56,8 @@ https://www.wch.cn/download/CH341SER_ZIP.html
 - The capacitor (`C2`) between `EN` and `GND` needs to be high enough, else the auto reset will not work. `100nF` was too little, so the IDE was stuck at `Hard resetting via RTS pin...` and the module had to be plugged out and in again manually. Increasing the capacitance to `4.7nF` solved this and the auto reset works fine with that.
 
 ## Sponsorship - PCBWay
-The physical PCB's and stencil are sponsored by PCBWay. Overall i am very satisfied with the quality of the pcb's, especially with
+The physical PCB's and stencil are sponsored by PCBWay.  
+Overall i am very satisfied with the quality of the pcb's, especially with
 - the matte surface finish
 - the cover of the vias, which almost feel like plugged, so there is no way to accidentally put solder in there to cause a short circuit
 - the traces, which are covered better than other manufacturers do and cannot be brushed/scraped away easily. Big plus for that
