@@ -2421,7 +2421,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="U1" gate="G$1" x="205.74" y="73.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="215.909" y="68.067040625" size="2.54225" layer="95" rot="R180"/>
-<attribute name="VALUE" x="215.9033" y="81.79065" size="2.54083125" layer="96" rot="R180"/>
+<attribute name="VALUE" x="218.4433" y="81.79065" size="2.54083125" layer="96" rot="R180"/>
 </instance>
 <instance part="U2" gate="G$1" x="124.46" y="35.56" smashed="yes">
 <attribute name="NAME" x="114.3" y="56.515" size="1.778" layer="95"/>
@@ -2464,8 +2464,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="169.164" y="10.541" size="1.778" layer="96"/>
 </instance>
 <instance part="JP1" gate="G$1" x="195.58" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="194.31" y="64.516" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="197.104" y="65.278" size="1.778" layer="96" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="199.39" y="51.816" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
