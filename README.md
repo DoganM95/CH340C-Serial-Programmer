@@ -28,7 +28,11 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 - **USB-C Connectivity**: Utilizes a USB-C connection for modern, reversible, and reliable connectivity.
 - **Auto-Programming**: Simplifies the programming process by eliminating the need for manual button presses on the ESP32 during programming.
 
+## Schematic
+![Screenshot 2023-12-12 205031](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/48a62f46-f3fe-46c4-bf55-7b9714a4d1dc)
+
 ## Part List
+
 
 The following table contains all the parts required for the CH340C-Module, along with their corresponding printed names. The parts are listed in the recommended order of soldering.
 
