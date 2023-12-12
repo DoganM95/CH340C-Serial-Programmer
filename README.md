@@ -29,7 +29,7 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 - **Auto-Programming**: Simplifies the programming process by eliminating the need for manual button presses on the ESP32 during programming.
 
 ## Schematic
-![Screenshot 2023-12-12 205031](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/48a62f46-f3fe-46c4-bf55-7b9714a4d1dc)
+![Screenshot 2023-12-12 212141](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/84a79a50-4d70-4a3f-a2ed-b04c1a96539b)
 
 ## Part List
 
@@ -39,15 +39,15 @@ The following table contains all the parts required for the CH340C-Module, along
 | Reference | Part Name               | Description                           |
 |-----------|-------------------------|---------------------------------------|
 | J1        | CQ-USB-C16PSMT01        | 16 Pin female USB C connector         |
-| U2        | CH340C                  | Programming IC                        |
+| U2        | CH340C                  | Programming IC, SOP-16 package        |
 | R1        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | R2        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | C1        | 0603-100nF              | Capacitor, 0603 sized, 100 nano Farad |
 | C2        | 0603-4.7uF              | Capacitor, 0603 sized, 4.7 micro Farad |
 | JP1       | Jumper                  | short: mid (VCC) with left/inner (3V3) or right/outer (5V)|
-| U4        | AO3400                  | N-Channel Mosfet                      |
-| U3        | AO3400                  | N-Channel Mosfet                      |
-| U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator          |
+| U4        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
+| U3        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
+| U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator, SOT-223 package |
 
 ## Driver
 https://www.wch.cn/download/CH341SER_ZIP.html
