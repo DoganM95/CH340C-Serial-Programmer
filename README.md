@@ -49,11 +49,21 @@ The following table contains all the parts required for the CH340C-Module, along
 https://www.wch.cn/download/CH341SER_ZIP.html
 
 ## Key Takeaways
-- The CH340C can be powered with `3.3V` as well as `5V`, but its TX voltage perhaps is too high for e.g. an esp32, so powering it with `3.3V` seems fine
-- The `3V` pin of the CH340C needs to be connected (exclusively) to `GND` with a `100nF` capacitor in between, else it will not work and not show up in windows device manager
+- The CH340C can be powered with `3.3V` or `5V`. The input Voltage translates to its TX voltage and 5V is too high for e.g. an esp32, so it gets powered with `3.3V` 
+- The `3V` pin of the CH340C needs to be connected to `GND` with a `100nF` capacitor, else it will not work and not show up in device manager
 - Connecting it with wrong polarity (`5V` and `GND`) gets the chip hot quickly, but doesn't break it when cutting the power off soon (like 20 seconds)
-- The absolute minimum circuit (only) to check if a CH340C ic is functional and gets recognized in windows device manager consists of a usb port with all 4 pins (`5V`, `D-`, `D+`, `GND`) connected to the CH340C as well as the said `100nF` capacitor from its `3V` pin to gnd
-- The capacitor (`C2`) between `EN` and `GND` needs to be high enough, else the auto reset will not work. `100nF` was too little, so the IDE was stuck at `Hard resetting via RTS pin...` and the module had to be plugged out and in again manually. Increasing the capacitance to `4.7nF` solved this and the auto reset works fine with that.
+- The minimum circuit, only to check if a CH340C ic is functional, consists of a usb port with (`5V`, `D-`, `D+`, `GND`) connected to the CH340C as well as the said `100nF` capacitor from its `3V` pin to `GND`
+- The capacitor (`C2`) between `EN` and `GND` needs to be high enough, else the auto reset will not work. `100nF` was too little, so the IDE was stuck at `Hard resetting via RTS pin...` and the module had to be plugged out and in again manually. Increasing the capacitance to `4.7uF` solved this and the auto reset works fine with that.
 
-## Sponsorship - PCBWay
-The physical PCB's and stencil are sponsored by PCBWay. Overall i am very satisfied with the quality of the pcb's and the matte surface finish, as well as the cover of the vias, which almost feel like plugged, so there is no way to accidentally put solder in there to cause a short circuit. One thing i missed was clearer texts (white) on the pcb's, but printing those in good quality, sized at 0.6mm, can be challenging. The traces however are covered better than other manufacturers do and cannot be brushed/scraped away easily. Big plus for that. I am very pleased to get these sponsored by PCBWay and can recommend their service, especially for the high quality you get and the huge amount of configurable settings.  
+## Sponsorship - [PCBWay](https://pcbway.com/g/8bcMJY)
+The physical PCB's and stencil are sponsored by [PCBWay](https://pcbway.com/g/8bcMJY).  
+Overall i am very satisfied with the quality of the pcb's, especially with
+- the matte surface finish
+- the cover of the vias, which almost feel like plugged, so there is no way to accidentally put solder in there to cause a short circuit
+- the traces, which are covered better than other manufacturers do and cannot be brushed/scraped away easily. Big plus for that
+
+One thing i missed was clearer texts (white) on the pcb's, but printing those in good quality, especially sized at 0.6mm, can be challenging.  
+I am very pleased to get these sponsored by [PCBWay](https://pcbway.com/g/8bcMJY) and can recommend their service, especially for the high quality you get and the huge amount of configurable settings.  
+
+## Video preview
+https://github.com/DoganM95/CH340C-Pcb/assets/38842553/810827a4-b2fa-454a-bed7-59ae43e08667
