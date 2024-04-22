@@ -34,12 +34,11 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 
 ## Part List
 
-
 The following table contains all the parts required for the CH340C-Module, along with their corresponding printed names. The parts are listed in the recommended order of soldering.
 
 | Reference | Part Name               | Description                           |
 |-----------|-------------------------|---------------------------------------|
-| J1        | CQ-USB-C16PSMT01        | 16 Pin female USB C connector         |
+| J1        | CQ-USB-C16PSMT01        | 16 Pin female USB C connector         | 
 | U2        | CH340C                  | Programming IC, SOP-16 package        |
 | R1        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | R2        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
@@ -49,6 +48,15 @@ The following table contains all the parts required for the CH340C-Module, along
 | U4        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
 | U3        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
 | U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator, SOT-223 package |
+
+## Libraries / Footprints used
+- https://github.com/sparkfun/SparkFun_Eagle_Settings/blob/main/ulp/exp-lbrs.ulp
+- https://www.snapeda.com/parts/AMS1117/Advanced+Monolithic+Systems/view-part/
+- https://www.snapeda.com/parts/AO3400/Alpha+%2526+Omega+Semiconductor+Inc./view-part/
+- https://www.snapeda.com/parts/CH340C/WCH/view-part/
+- https://www.snapeda.com/parts/CQ-USB-C16PSMT01/Shenzen%20Chuangqin%20Technology/view-part/?ref=search&t=CQ-USB-C16PSMT01
+- https://github.com/epukaza/eagle-libraries/blob/master/eagle-ltspice.lbr
+- https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/main/SparkFun-Jumpers.lbr
 
 ## Driver
 https://www.wch.cn/download/CH341SER_ZIP.html
