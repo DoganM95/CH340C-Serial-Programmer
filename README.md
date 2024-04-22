@@ -29,28 +29,37 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 - **Auto-Programming**: Simplifies the programming process by eliminating the need for manual button presses on the ESP32 during programming.
 
 ## Schematic
-![Screenshot 2023-12-12 205031](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/48a62f46-f3fe-46c4-bf55-7b9714a4d1dc)
+![image](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/3fddb7be-6d0b-416b-9ca0-b74c0c2dafe3)
+
 
 ## Part List
-
 
 The following table contains all the parts required for the CH340C-Module, along with their corresponding printed names. The parts are listed in the recommended order of soldering.
 
 | Reference | Part Name               | Description                           |
 |-----------|-------------------------|---------------------------------------|
-| J1        | CQ-USB-C16PSMT01        | 16 Pin female USB C connector         |
-| U2        | CH340C                  | Programming IC                        |
+| J1        | CQ-USB-C16PSMT01        | 16 Pin female USB C connector         | 
+| U2        | CH340C                  | Programming IC, SOP-16 package        |
 | R1        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | R2        | 0603-5.1k               | Resistor, 0603 sized, 5.1 kilo Ohm    |
 | C1        | 0603-100nF              | Capacitor, 0603 sized, 100 nano Farad |
 | C2        | 0603-4.7uF              | Capacitor, 0603 sized, 4.7 micro Farad |
 | JP1       | Jumper                  | short: mid (VCC) with left/inner (3V3) or right/outer (5V)|
-| U4        | AO3400                  | N-Channel Mosfet                      |
-| U3        | AO3400                  | N-Channel Mosfet                      |
-| U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator          |
+| U4        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
+| U3        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
+| U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator, SOT-223 package |
+
+## Libraries / Footprints used
+- https://github.com/sparkfun/SparkFun_Eagle_Settings/blob/main/ulp/exp-lbrs.ulp
+- https://snapeda.com/parts/AMS1117/Advanced+Monolithic+Systems/view-part/
+- https://snapeda.com/parts/AO3400/Alpha+%2526+Omega+Semiconductor+Inc./view-part/
+- https://snapeda.com/parts/CH340C/WCH/view-part/
+- https://snapeda.com/parts/CQ-USB-C16PSMT01/Shenzen%20Chuangqin%20Technology/view-part/?ref=search&t=CQ-USB-C16PSMT01
+- https://github.com/epukaza/eagle-libraries/blob/master/eagle-ltspice.lbr
+- https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/main/SparkFun-Jumpers.lbr
 
 ## Driver
-https://www.wch.cn/download/CH341SER_ZIP.html
+https://wch.cn/download/CH341SER_ZIP.html
 
 ## Key Takeaways
 - The CH340C can be powered with `3.3V` or `5V`. The input Voltage translates to its TX voltage and 5V is too high for e.g. an esp32, so it gets powered with `3.3V` 
