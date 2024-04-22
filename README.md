@@ -51,15 +51,15 @@ The following table contains all the parts required for the CH340C-Module, along
 
 ## Libraries / Footprints used
 - https://github.com/sparkfun/SparkFun_Eagle_Settings/blob/main/ulp/exp-lbrs.ulp
-- https://www.snapeda.com/parts/AMS1117/Advanced+Monolithic+Systems/view-part/
-- https://www.snapeda.com/parts/AO3400/Alpha+%2526+Omega+Semiconductor+Inc./view-part/
-- https://www.snapeda.com/parts/CH340C/WCH/view-part/
-- https://www.snapeda.com/parts/CQ-USB-C16PSMT01/Shenzen%20Chuangqin%20Technology/view-part/?ref=search&t=CQ-USB-C16PSMT01
+- https://snapeda.com/parts/AMS1117/Advanced+Monolithic+Systems/view-part/
+- https://snapeda.com/parts/AO3400/Alpha+%2526+Omega+Semiconductor+Inc./view-part/
+- https://snapeda.com/parts/CH340C/WCH/view-part/
+- https://snapeda.com/parts/CQ-USB-C16PSMT01/Shenzen%20Chuangqin%20Technology/view-part/?ref=search&t=CQ-USB-C16PSMT01
 - https://github.com/epukaza/eagle-libraries/blob/master/eagle-ltspice.lbr
 - https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/main/SparkFun-Jumpers.lbr
 
 ## Driver
-https://www.wch.cn/download/CH341SER_ZIP.html
+https://wch.cn/download/CH341SER_ZIP.html
 
 ## Key Takeaways
 - The CH340C can be powered with `3.3V` or `5V`. The input Voltage translates to its TX voltage and 5V is too high for e.g. an esp32, so it gets powered with `3.3V` 
