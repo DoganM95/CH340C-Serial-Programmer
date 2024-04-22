@@ -29,7 +29,8 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 - **Auto-Programming**: Simplifies the programming process by eliminating the need for manual button presses on the ESP32 during programming.
 
 ## Schematic
-![Screenshot 2023-12-12 212141](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/84a79a50-4d70-4a3f-a2ed-b04c1a96539b)
+![image](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/3fddb7be-6d0b-416b-9ca0-b74c0c2dafe3)
+
 
 ## Part List
 
