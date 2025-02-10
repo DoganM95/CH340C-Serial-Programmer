@@ -1,4 +1,4 @@
-# Inro
+# Intro
 
 This Module is a specialized ESP32 programmer that simplifies the programming process by incorporating auto-programming functionality. This means there's no need for manual interaction with the ESP32 during programming, such as pressing buttons on the board. Additionally, it supports Power Delivery (PD), allowing the attached ESP32 to be powered from a PD source at 5V.
 
