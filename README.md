@@ -31,10 +31,9 @@ This CH340C-Module is a specialized ESP32 programmer PCB that simplifies the pro
 ## Schematic
 ![image](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/3fddb7be-6d0b-416b-9ca0-b74c0c2dafe3)
 
+## BOM
 
-## Part List
-
-The following table contains all the parts required for the CH340C-Module, along with their corresponding printed names. The parts are listed in the recommended order of soldering.
+The parts are listed in the recommended order of soldering.
 
 | Reference | Part Name               | Description                           |
 |-----------|-------------------------|---------------------------------------|
@@ -49,15 +48,6 @@ The following table contains all the parts required for the CH340C-Module, along
 | U3        | AO3400                  | N-Channel Mosfet, SOT-23 package      |
 | U1        | AMS1117 3.3V            | 5V to 3.3V Voltage regulator, SOT-223 package |
 
-## Libraries / Footprints used
-- https://github.com/sparkfun/SparkFun_Eagle_Settings/blob/main/ulp/exp-lbrs.ulp
-- https://snapeda.com/parts/AMS1117/Advanced+Monolithic+Systems/view-part/
-- https://snapeda.com/parts/AO3400/Alpha+%2526+Omega+Semiconductor+Inc./view-part/
-- https://snapeda.com/parts/CH340C/WCH/view-part/
-- https://snapeda.com/parts/CQ-USB-C16PSMT01/Shenzen%20Chuangqin%20Technology/view-part/?ref=search&t=CQ-USB-C16PSMT01
-- https://github.com/epukaza/eagle-libraries/blob/master/eagle-ltspice.lbr
-- https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/main/SparkFun-Jumpers.lbr
-
 ## Driver
 https://wch.cn/download/CH341SER_ZIP.html
 
@@ -68,6 +58,9 @@ https://wch.cn/download/CH341SER_ZIP.html
 - The minimum circuit, only to check if a CH340C ic is functional, consists of a usb port with (`5V`, `D-`, `D+`, `GND`) connected to the CH340C as well as the said `100nF` capacitor from its `3V` pin to `GND`
 - The capacitor (`C2`) between `EN` and `GND` needs to be high enough, else the auto reset will not work. `100nF` was too little, so the IDE was stuck at `Hard resetting via RTS pin...` and the module had to be plugged out and in again manually. Increasing the capacitance to `4.7uF` solved this and the auto reset works fine with that.
 
+## Video preview
+https://github.com/DoganM95/CH340C-Pcb/assets/38842553/810827a4-b2fa-454a-bed7-59ae43e08667
+
 ## Sponsorship - [PCBWay](https://pcbway.com/g/8bcMJY)
 The physical PCB's and stencil are sponsored by [PCBWay](https://pcbway.com/g/8bcMJY).  
 Overall i am very satisfied with the quality of the pcb's, especially with
@@ -77,6 +70,3 @@ Overall i am very satisfied with the quality of the pcb's, especially with
 
 One thing i missed was clearer texts (white) on the pcb's, but printing those in good quality, especially sized at 0.6mm, can be challenging.  
 I am very pleased to get these sponsored by [PCBWay](https://pcbway.com/g/8bcMJY) and can recommend their service, especially for the high quality you get and the huge amount of configurable settings.  
-
-## Video preview
-https://github.com/DoganM95/CH340C-Pcb/assets/38842553/810827a4-b2fa-454a-bed7-59ae43e08667
