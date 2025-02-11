@@ -28,9 +28,6 @@ This Module is a specialized ESP32 programmer that simplifies the programming pr
 - **USB-C Connectivity**: Utilizes a USB-C connection for modern, reversible, and reliable connectivity.
 - **Auto-Programming**: Simplifies the programming process by eliminating the need for manual button presses on the ESP32 during programming.
 
-## Schematic
-![image](https://github.com/DoganM95/CH340C-Pcb/assets/38842553/3fddb7be-6d0b-416b-9ca0-b74c0c2dafe3)
-
 ## BOM
 
 The parts are listed in the recommended order of soldering.
